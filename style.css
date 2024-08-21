@@ -225,14 +225,14 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    justify-content: center;
     
 
 }
 
 .feature {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto;
+    
 
     width: calc(100% / 3);
     border: red solid 2px;
