@@ -108,7 +108,8 @@ header {
     max-width: 1200px;
 }
 
-.left h1 {
+.left h1, 
+.questions--toptext h1 {
     font-size: 48px;
     font-weight: 700;
     color: #1A202C;
@@ -719,4 +720,247 @@ header {
     right: 0;
     height: 5px; 
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+/* TESTIMONIALS */
+
+#testimonials {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.testimonialscontent {
+    display: flex;
+    flex-direction: row;
+}
+
+.testimonialscontent .left, 
+.testimonialscontent .right {
+    width: 50%;
+}
+
+.testimonialscontent .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stars {
+    
+
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+.stars svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    
+}
+
+.testimonial p:first-child {
+    font-size: 20px;
+    color: #243E63;
+    font-weight: bold;
+}
+
+.testimonial p:last-child {
+    font-size: 16px;
+    color: #4A5568; 
+    line-height: 1.625;
+    
+}
+
+.testimonialscontent .right {
+    margin-left: 20px;
+}
+
+.testimonialscontent .right h1 {
+    margin-top: 10px;
+    font-size: 48px;
+    font-weight: 800;
+    color: #243E63;
+    margin-bottom: 15px; 
+
+}
+
+.rightsubheadingtestimonial {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #7C8BA1;
+    line-height: 1.625;
+    font-weight: 500;
+    margin-bottom: 15px;
+
+}
+
+.testimonial-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.testimonial-info figure img {
+    width: 70px;
+    border-radius: 50px;
+}
+
+.testimonial--info--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.testimonial--name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.testimonial--name p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+    color: #243E63; 
+}
+
+.testimonial--name p:last-child {
+    padding-top: 5px;
+    font-size: 16px;
+    color: #7C8BA1;
+}
+
+.testimonialscontent .left img {
+    width: 550px;
+    margin-right: 20px;
+}
+
+.arrow-div {
+    
+}
+
+.arrow-div button {
+    border: none;
+    margin-right: 10px;
+    border-radius: 50px;
+    background-color: rgb(237 242 247);
+    padding: 10px 10px;
+}
+
+.arrow-div svg {
+    stroke: rgb(100 21 255 );
+    width: 32px;
+}
+
+/* QUESTIONS */
+
+#questions {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.questions--toptext {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+
+}
+
+.questions--toptext h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color: #1A202C;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.questions--toptext p:last-child {
+    font-size: 18px;
+    color: #7C8BA1;
+    text-align: center;
+    line-height: 1.625;
+    width: 50%;
+}
+
+.questions--container {
+    width: 80%;
+   
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 auto;
+}
+
+.question {
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(237 242 247);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+}
+
+.question--top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.question--top h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 15px;
+}
+
+.question p {
+    color: rgb(26 32 44);
+    font-size: 1rem;
+    line-height: 1.625;
+}
+
+#info {
+    background-color: rgb(100 21 255 );
+    padding: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.info--content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info--content--left h1 {
+    font-size: 30px;
+    color: rgb(247 250 252 );
+    width: 75%;
+    line-height: 1.5;
+}
+
+.info--content--right { 
+    display: flex;
+    flex-direction: row;
+
+}
+
+.info--content--right button:first-child {
+    background-color: rgb(245 101 101 );
+    color: rgb(247 250 252 );
+    border: none;
+    border-radius: 50px;
+    padding: 2px 8px;
+    margin-right: 32px;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
 }
