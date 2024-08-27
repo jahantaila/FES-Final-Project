@@ -964,3 +964,51 @@ header {
     font-weight: bold;
     width: auto;
 }
+
+.info--content--right button:last-child {
+    color: rgb(247 250 252 );
+    border: none;
+    border-radius: 50px;
+    padding: 2px 8px;
+    font-size: 16px;
+    font-weight: bold;
+    width: auto;
+    background-color: none;
+    background-color: rgb(100 21 255 );
+
+    border: 3px solid rgb(160 174 192);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    width: 100%;
+    background-color: rgb(100 21 255 );
+
+}
+
+.footer--top {
+    display: flex;
+    flex-direction: column;
+ 
+    padding: 20px;
+}
+
+.footer-top--items {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: calc(100% / 5);
+}
+
+.footer-top--items ul {
+    display: flex;
+    flex-direction: column;
+}
