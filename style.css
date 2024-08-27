@@ -989,8 +989,6 @@ footer {
 }
 
 .footer--top {
-    display: flex;
-    flex-direction: column;
  
     padding: 20px;
 }
@@ -1002,6 +1000,7 @@ footer {
 }
 
 .items {
+    
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -1011,4 +1010,5 @@ footer {
 .footer-top--items ul {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
