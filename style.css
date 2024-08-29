@@ -935,6 +935,7 @@ header {
     display: flex;
     flex-direction: row;
     border-radius: 0.5rem;
+    overflow: hidden;
 }
 
 .info--content {
@@ -955,8 +956,16 @@ header {
 #info svg:first-child {
     left: 0px;
     top: 20px;
-    
+    transform: translate(-50px,150px) !important
 }
+
+#info .svg-2 {
+    right: -50px;
+    
+    transform: translate(50px,-150px) !important
+
+}
+
 
 .info--content--left h1 {
     font-size: 30px;
