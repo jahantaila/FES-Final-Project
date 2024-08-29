@@ -81,8 +81,13 @@ ul {
     color: white;
     font-size: 14px;
     font-weight: bold;
+    animation: all ease-in-out 3s ;
 }
 
+.signup:hover {
+    cursor: pointer;
+    background-color: rgb(125, 80, 214);
+}
 
 /* Header */
 
@@ -98,6 +103,17 @@ header {
     margin-top: 10%;
     
 }
+
+.left-content {
+    position: relative;;
+}
+
+.left-content button {
+    position: absolute;
+    right: 100px;
+    top: 5px;
+}
+
 
 .purpletext {
     color: rgb(100 21 255 ); 
@@ -140,10 +156,6 @@ header {
     font-weight: bold;
     font-size: 16px;
     color: rgb(226, 232, 240);
-
-    
-
-    
 
 }
 
@@ -670,17 +682,31 @@ header {
     
     background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
     color: #F7FAFC;
+    transition: all ease-in-out 400ms;
+}
+
+.greengrad:hover, 
+.redgrad:hover, 
+.whitegrad:hover {
+    transform: translate(5px, 5px); 
+    box-shadow: #1A202C;
+    
+
 }
 
 .redgrad {
     
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
     color: #F7FAFC;
+    transition: all ease-in-out 400ms;
+
 }
 
 .whitegrad {
     background: rgb(247 250 252);
     color:rgb(100 21 255) ;
+    transition: all ease-in-out 400ms;
+
     
 }
 
@@ -1014,7 +1040,21 @@ header {
     flex-direction: row;
     height: 70%;
     align-items: center;
+    transition: all ease-in-out 400ms;
 }
+
+.info--buttons--div button {
+    transition: all ease-in-out 400ms;
+}
+
+
+.info--buttons--div button:hover {
+    transform: translate(5px, 5px); 
+    cursor: pointer;
+
+}
+
+
 
 
 
@@ -1156,8 +1196,6 @@ header {
   }
   
   
-  
-  
-  
-  
+  /* RESPONSIVENESS */
+
   
