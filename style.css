@@ -44,7 +44,74 @@ nav {
     height: 80px;
 }
 
-ul {
+.hamburger-button {
+    display: none;
+    background: none;
+    border: none;
+}
+
+.hamburger-button:focus {
+    color: rgb(100 21 255 );
+}
+
+.hamburger-menu {
+    display: none;
+    
+
+    
+    z-index: 999;
+    
+    
+    background-color: rgb(255 255 255 ); 
+    color: rgb(26 32 44 );
+    border: 2px solid rgb(226, 232, 240);
+    border-radius: 50px; 
+    margin: 20px auto !important;
+
+    flex-direction: column;
+    justify-content: space-around;
+
+
+
+
+}
+
+.hamburger-menu nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hamburger-x-button {
+    background: none;
+    border: none;
+}
+
+.hamburger-x-button:focus{
+    color: #6415ff;
+}
+
+.hamburger-menu ul li {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+}
+
+.hamburger-menu .signup {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.hamburger-menu-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -1198,4 +1265,322 @@ header {
   
   /* RESPONSIVENESS */
 
+@media (max-width: 1080px) {
+
+    html, body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    
+
   
+    .row {
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        height: auto;
+    }
+    
+    header .left {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    header .left h1 {
+        width: 60%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header .left p{
+        width: 70%;
+        padding-top: 20px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    header .left input {
+        margin-bottom: 20px;
+    }
+
+    header .right {
+        width: auto;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header .right figure {
+        margin-top: 30px;
+        
+        
+    }
+
+    header .right img { 
+        max-width: 500px;
+        
+    }
+
+    #testimonials .right {
+        margin-left: 10%;
+    }
+ } 
+
+ @media (max-width: 840px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .hamburger-button {
+        display: block
+    }
+
+    
+
+    #qualitywork .left button {
+        width: 40%;
+    }
+
+    #qualitywork .right figure {
+        margin-left: 10px;
+    }
+    #qualitywork .right figure img {
+        width: 400px;
+    }
+
+
+    #steps {
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+    
+    }
+
+    #steps .left figure img {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    #steps .right div:first-child {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .step {
+        margin: 0 auto;
+    }
+
+    #values {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #values .left div:first-child {
+        text-align: center;
+    }
+
+    #values .left p:nth-of-type(2) {
+        font-size: 14px;
+    }
+
+    .principletext {
+        margin-top: 10px;
+    }
+    
+    .principlesdiv {
+        margin: 20px auto;
+        width: 120%;
+    }
+
+    #values .right {
+        width: auto;
+    }
+
+    #values .right figure img {
+        width: 500px;
+
+    }
+
+    .buynow {
+        width: auto;
+    }
+
+    .priceoptions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personal, .business, .enterprise {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .testimonialscontent .left img {
+        width: 400px;
+    }
+
+    .testimonialscontent .right h1 {
+        font-size: 40px;
+    }
+
+    .testimonial p:last-child {
+        margin-bottom: 30px;
+    }
+    .arrow-div button {
+        padding: 0px;
+    }
+
+    #info {
+        width: 80%;
+        margin: 20px auto;
+        
+    }
+
+    .info--content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info--content--left h1 {
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    #info svg:first-child {
+        transform: translate(-80px,200px) !important;
+        top: auto;
+    }
+    
+ }
+
+ @media (max-width: 600px) {
+
+    .left-content button {
+        right: 12%;
+    }
+ 
+    .feature {
+       width:  calc(100% / 2); 
+    }
+
+    #qualitywork {
+        
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    #qualitywork .left {
+        text-align: center;
+        width: 70%;
+    }
+
+    #qualitywork .left h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .qualityworksubtext {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #qualitywork .left button {
+        
+        font-size: 14px;
+        margin: 10px auto;
+        padding: 10px 15px;
+    }
+
+    #qualitywork .right figure {
+        margin: 10px auto;
+    }
+
+    #qualitywork .right {
+        width: auto;
+    }
+
+    #steps .left figure img {
+
+        width: 400px;
+    }
+
+    #steps .left {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    #steps .left figure {
+        margin: 0 auto;
+    }
+
+    .principlesdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .principle {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .principletitle {
+        text-align: left;
+    }
+
+    .principle:last-child {
+        margin-left: 0px;
+    }
+
+    .testimonialscontent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonialscontent .left {
+        flex-direction: row;
+    }
+
+    .testimonialscontent .figure {
+        justify-content: center;
+    }
+
+    .testimonialscontent .right {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .stars {
+        justify-content: center;
+    }
+
+    .testimonialscontent .left, .testimonialscontent .right {
+        width: auto;
+        justify-content: center;
+    }
+
+    .info--content {
+        width: 100%;
+
+    }
+
+    #info svg:first-child {
+        scale: 0.8;
+        transform: translate(-80px,350px) !important;
+    }
+ }
+
