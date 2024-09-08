@@ -1265,12 +1265,29 @@ header {
   
   /* RESPONSIVENESS */
 
-@media (max-width: 1080px) {
+
+  @media (min-width: 1200px) {
+
+    header {
+         height: calc(100vh - 20%);
+    }
+  }
+
+
+
+
+
+
+
+
+
+@media (max-width: 1300px) {
 
     html, body {
         max-width: 100%;
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
     }
+
     
 
   
@@ -1584,3 +1601,312 @@ header {
     }
  }
 
+ @media (max-width: 1200px) {
+
+    .featurecontent {
+        width: 90%;
+        margin: 50px auto;
+    }
+       
+    #qualitywork .right figure img {
+        width: 400px;
+    }
+
+    #qualitywork .right figure {
+        margin-left: 50px;
+    }
+
+    #qualitywork .left {
+        margin-left: 50px;
+
+    }
+
+    #values .right figure img {
+        width: 500px;
+    }
+    #values .left {
+        margin-left: 50px;
+    }
+
+    .testimonialscontent .left img {
+        width: 500px;
+    }
+
+    #testimonials .right {
+        margin-right: 70px;
+    }
+
+ }
+
+ @media (max-width: 1100px) {
+
+    #qualitywork .right {
+        width: auto;
+    }
+
+    .right {
+        width: auto;
+    }
+    
+    #steps .left {
+        width: auto;
+    }
+
+    .left {
+        width: auto;
+    }
+    
+    #steps {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #steps .left  {
+        margin: 0 auto;
+    }
+    #steps .right {
+        text-align: center;
+        margin: 20px auto 0px auto; 
+    }
+
+    .step {
+        display: flex;
+        flex-direction: column;
+    }
+    .step div {
+        align-items: center;
+        margin-top: 20px;
+    }
+    .stepname .steptext {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #values {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #values .left, #values .right {
+        margin-top: 30px !important;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .priceoptions {
+        flex-direction: column;
+    }
+
+    .personal, .business, .enterprise {
+        margin: 20px auto; 
+    }
+
+    #testimonials {
+        flex-direction: column;
+
+    }
+
+    .testimonialscontent {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .testimonialscontent .right {
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .stars {
+        justify-content: center;
+    }
+    
+ }
+
+ @media (max-width: 1000px) {
+    #qualitywork {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #qualitywork .left {
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    #qualitywork .left h1 {
+        text-align: center;
+
+    }
+    .qualityworksubtext {
+        text-align: center;
+    }
+
+    #qualitywork .right {
+        
+        margin: 30px auto;
+    }
+
+
+ }
+
+ @media (max-width: 800px) {
+    
+    .left-content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+    }
+
+    header .left input {
+        margin-bottom: 10px;
+    }
+
+    .left-content button {
+        position: static;
+        width: 70%;
+    }
+
+    .feature {
+        margin: 20px auto;
+        width: calc(100% /2 );
+    }
+
+    .info--content--left h1 {
+        margin: 20px auto;
+    }
+
+    info--content--left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+ }
+
+ @media (max-width: 600px) {
+
+    .column__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .column {
+        width: calc(100% / 3);
+        margin: 20px auto;
+    }
+
+    .copyright__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    .company__name, .copyright__actual--copyright{
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .feature {
+        width: calc(100% / 1 );
+        text-align: center;
+        justify-content: center;
+    }
+
+    .featuretextcontainer {
+        text-align: center;
+    }
+
+    .featureheading {
+        text-align: center;
+    }
+ }
+
+ @media (max-width: 500px ) {
+
+    .personal, .business, .enterprise {
+        width: 100%;
+    }
+
+    #steps .left figure img {
+        width: 300px;
+    }
+    
+
+    .rightimage {
+        width: 400px;
+    }
+
+    #values .right figure img {
+        width: 400px;
+    }
+
+    .testimonialscontent .left img {
+        width: 300px;
+    }
+
+    .questions--toptext h1 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    #info svg:first-child {
+        transform: translate(-80px,550px) !important
+    }
+
+    #qualitywork .right {
+        
+        margin: 30px auto;
+    }
+    #qualitywork .right figure img {
+        width: 300px;
+    }
+    #qualitywork .right figure {
+        margin: 0 auto;
+    }
+
+    #values .left h1 {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    #values .right figure img {
+        width: 300px;
+    }
+
+    #pricing .toptext h1 {
+        font-size: 34px;
+    }
+
+    .testimonial-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info--content--left h1 {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .info--buttons--div {
+        flex-direction: column;
+    }
+
+    .info--content--right div button:first-child {
+        margin: 20px auto; 
+    }
+ }
+
+ @media (max-width: 400px) {
+    .rightimage {
+        width: 300px;
+    }
+ }
