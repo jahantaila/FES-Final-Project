@@ -1288,6 +1288,10 @@ header {
         /* overflow-x: hidden; */
     }
 
+    body {
+        overflow: hidden;
+    }
+
     
 
   
